@@ -30,7 +30,6 @@ def intermediate():
     x = climb_intermediate(x0, h)
 
     print("Venla started at %d and got to %d" % (x0, x))
-    return x0, x
 
 def climb_advanced(x, h):
     # keep climbing until we've found a summit
@@ -60,6 +59,7 @@ def advanced():
     x0 = random.randint(1, 98)
     x = climb_advanced(x0, h)
 
+    print("Venla started at %d and got to %d" % (x0, x))
 
 if __name__ == "__main__":
     print("INTERMEDIATE")
@@ -67,9 +67,9 @@ if __name__ == "__main__":
     intermediate()
     print("------------------")
 
-    # print()
+    print()
 
-    # print("ADVANCED")
-    # print("------------------")
-    # advanced()
-    # print("------------------")
+    print("ADVANCED")
+    print("------------------")
+    advanced()
+    print("------------------")
